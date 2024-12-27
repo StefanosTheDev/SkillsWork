@@ -1,11 +1,14 @@
 {
   "name": "skillswork",
   "version": "1.0.0",
-  "main": "strings1.js",
+  "main": "main.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "typescript": "^5.7.2"
+  }
 }
