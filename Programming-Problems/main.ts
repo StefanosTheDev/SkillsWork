@@ -42,44 +42,44 @@ function isValid(s: string): boolean {
   const key: string = '(){}[]';
   for (let i = 0; i < s.length; i++) {
     console.log(s[i]);
-    // Okay I need to find the type
+    // I can do a search to make sure that i figure out uwhat value it is in my key. then I can expect the corresponding value
   }
   return true;
 }
 isValid('(){');
 /**
- * 
- * 
- * Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
-
-An input string is valid if:
-
-Open brackets must be closed by the same type of brackets.
-Open brackets must be closed in the correct order.
-Every close bracket has a corresponding open bracket of the same type.
- 
-
-Example 1:
-
-Input: s = "()"
-
-Output: true
-
-Example 2:
-
-Input: s = "()[]{}"
-
-Output: true
-
-Example 3:
-
-Input: s = "(]"
-
-Output: false
-
-Example 4:
-
-Input: s = "([])"
-
-Output: true
- */
+   * 
+   * 
+   * Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+  
+  An input string is valid if:
+  
+  Open brackets must be closed by the same type of brackets.
+  Open brackets must be closed in the correct order.
+  Every close bracket has a corresponding open bracket of the same type.
+   
+  
+  Example 1:
+  
+  Input: s = "()"
+  
+  Output: true
+  
+  Example 2:
+  
+  Input: s = "()[]{}"
+  
+  Output: true
+  
+  Example 3:
+  
+  Input: s = "(]"
+  
+  Output: false
+  
+  Example 4:
+  
+  Input: s = "([])"
+  
+  Output: true
+   */
