@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "module": "ESNext", // Use ESNext module system for ESM
+    "target": "ES6", // Target modern JS
+    "moduleResolution": "node", // Use Node module resolution strategy
+    "esModuleInterop": true, // Enable compatibility for commonjs modules
+    "skipLibCheck": true, // Ignore type errors in node_modules
+    "forceConsistentCasingInFileNames": true,
+    "strict": true, // Enable strict type checking
+    "outDir": "./dist" // Output compiled files here (optional)
+  },
+  "include": ["main.ts"]
+}
