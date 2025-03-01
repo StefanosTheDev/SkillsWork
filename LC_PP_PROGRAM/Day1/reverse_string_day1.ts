@@ -1,6 +1,4 @@
-// Reverse String Problem Solve
-function reverse(str: string) {
-  // How to solve this.
+export function reverse(str: string) {
   let reversedString: string = '';
   for (let i = str.length - 1; i >= 0; i--) {
     reversedString += str[i];
@@ -8,4 +6,4 @@ function reverse(str: string) {
   return reversedString;
 }
 
-console.log(reverse('StefA'));
+console.log(reverse('StefA')); // Outputs: "AfetS"
