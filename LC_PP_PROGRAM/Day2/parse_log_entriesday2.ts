@@ -8,7 +8,7 @@
 
 // So what I need to do is first, check if ERROR exists as a word in the log.
 // If ERROR exists in this. look for
-const logs: string[] = [
+const abc: string[] = [
   '2025-03-02 10:15:23 ERROR 500: Server Failure',
   '2025-03-02 10:16:45 INFO User Login Successful',
   '2025-03-02 10:17:01 ERROR 404: Resource Not Found',
@@ -16,7 +16,15 @@ const logs: string[] = [
   '2025-03-02 10:19:34 ERROR 404: Resource Not Found',
 ];
 
-// use the array method find to see
+export function parse(logs: string[]) {
+  let count: number = 0;
+  const findError = logs.filter((val) => val.includes('ERROR'));
+  for (let i = 0; i < findError.length; i++) {
+    if (findError[i].includes('Server Failure')) {
+      count++;
+    }
+  }
+  return count;
+}
 
-const findError = logs.filter((val) => val.includes('ERROR'));
-console.log(findError);
+console.log(parse(abc));
