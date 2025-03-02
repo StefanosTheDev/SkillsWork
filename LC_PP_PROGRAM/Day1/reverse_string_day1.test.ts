@@ -6,6 +6,4 @@ describe('Reverse String Function', () => {
   test('Makes sure value is reverse', () => {
     expect(reverse('ABC')).toBe('CBA');
   });
-
-  test;
 });
