@@ -5,9 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "tsx Day1/reverse_string_day1.ts",
+    "start": "tsx Day2/parse_log_entriesday2.ts",
     "build": "tsc",
-    "dev": "tsx watch Day1/reverse_main.ts",
+    "dev": "tsx watch Day2/parse_log_entriesday2.ts",
     "test": "jest"
   },
   "devDependencies": {
