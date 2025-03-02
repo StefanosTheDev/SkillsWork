@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
-}
+/* App.css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/* Page background */
+.app-container {
+  padding: 20px;
+  background-color: #f3f4f6; /* Equivalent to Tailwind's bg-gray-100 */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* Toggle Button */
+.toggle-button {
+  padding: 10px 20px;
+  background-color: #3b82f6; /* Tailwind bg-blue-500 */
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 16px;
+  transition: background-color 0.2s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+.toggle-button:hover {
+  background-color: #2563eb; /* Tailwind bg-blue-600 */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Container for boxes */
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 20px;
+  justify-content: center;
+}
+
+/* Individual User Box */
+.user-box {
+  border: 4px solid black;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.user-box:hover {
+  transform: scale(1.05);
+}
+
+/* Name Styling */
+.user-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1e40af; /* Tailwind text-blue-600 */
+}
+
+/* Age Styling */
+.user-age {
+  font-size: 18px;
+  color: #374151; /* Tailwind text-gray-700 */
 }
