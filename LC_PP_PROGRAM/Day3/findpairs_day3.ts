@@ -24,6 +24,7 @@ Output: []
 
 
 */
+
 function findPairs(arr: number[], val: number): number[][] {
   let pairs: number[][] = [];
   for (let i = 0; i < arr.length; i++) {
